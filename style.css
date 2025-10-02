@@ -1,1 +1,57 @@
+:root {
+  --lightblue: #8AFBFF;
+  --pastel-yellow: #F8FFB8;
+  --pastel-pink: #FF8AE2;
+  --white: #FFFFFF;
+}
 
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--white);
+  color: #333;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid var(--lightblue);
+  border-radius: 8px;
+}
+
+.btn {
+  background-color: var(--pastel-pink);
+  color: var(--white);
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--lightblue);
+}
+
+.profile {
+  margin-top: 20px;
+  font-weight: bold;
+  color: var(--pastel-yellow);
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+  .btn {
+    width: auto;
+  }
+}
